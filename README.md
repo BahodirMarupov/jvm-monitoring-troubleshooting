@@ -1,7 +1,7 @@
 ﻿Prepare answers to following questions:
 
-- `	`Which interface JDK tools use to connect to JVM locally?
-- `	`What is difference between profiling and traceability?
+- Which interface JDK tools use to connect to JVM locally?
+- What is difference between profiling and traceability?
 
 OutOfMemory (OOM) error troubleshooting
 
@@ -13,20 +13,20 @@ java -jar -Xmx100m heap-1.0.0-SNAPSHOT.jar
 
 Use jvisualvm to observe OOM
 
-- `	`Execute:
+- Execute:
 
 java -jar -Xmx100m heap-1.0.0-SNAPSHOT.jar
 
-- `	`In jvisualvm connect to our java process
-- `	`Go to "Monitor" tab
-- `	`Press any key in our application
-- `	`Observe how heap grows
+- In jvisualvm connect to our java process
+- Go to "Monitor" tab
+- Press any key in our application
+- Observe how heap grows
 
 Get heap dump
 
 Using -XX:+HeapDumpOnOutOfMemoryError option
 
-- `	`Execute and press any key:
+- Execute and press any key:
 
 java -jar -Xmx100m -XX:+HeapDumpOnOutOfMemoryError heap-1.0.0-SNAPSHOT.jar
 
@@ -56,8 +56,8 @@ Analyze heap dump
 
 Using Java Visual VM
 
-- `	`Open retrieved heap dump in jvisualvm
-- `	`Identify memory leak
+- Open retrieved heap dump in jvisualvm
+- Identify memory leak
 
 OQL
 
@@ -87,11 +87,11 @@ Deadlock troubleshooting
 
 Get deadlock
 
-- `	`Execute java application that simulates deadlock:
+- Execute java application that simulates deadlock:
 
 java -jar deadlock-1.0.0-SNAPSHOT.jar
 
-- `	`Get thread dump and locate lines similar to:
+- Get thread dump and locate lines similar to:
 
 Found one Java-level deadlock:
 
@@ -201,8 +201,8 @@ jinfo <pid>
 
 Practical task evaluation rules:
 
-- `	`OOM errors troubleshooting : 1.5 points
-- `	`Deadlock troubleshooting : 1.5 points
-- `	`Remote JVM profiling : 1 point
-- `	`FlightRecorder : 1 point
+- OOM errors troubleshooting : 1.5 points
+- Deadlock troubleshooting : 1.5 points
+- Remote JVM profiling : 1 point
+- FlightRecorder : 1 point
 
